@@ -1,0 +1,10 @@
+pandas
+numpy
+openpyxl
+requests
+
+gspread
+
+google-cloud-storage
+google-cloud-secret-manager
+google-auth

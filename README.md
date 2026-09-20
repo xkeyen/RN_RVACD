@@ -1,27 +1,52 @@
-# RN_RVACD
+# RN_RVACD - ETL Automatizado
 
-Proyecto de ingeniería de datos para el procesamiento y automatización de información.
+Pipeline ETL desarrollado en Python para automatizar la extracción,
+transformación y carga de información.
 
-## Tecnologías
+## Arquitectura
 
 - Python
-- Pandas
-- Web Scraping
 - Docker
-- Google Cloud Platform
-- Cloud Run
-- Cloud Scheduler
+- Google Cloud Run Jobs
+- Google Cloud Storage
+- Google Secret Manager
+- Google Sheets
+- Pandas
+- Gspread
+
+## Flujo
+
+Cloud Storage
+    ↓
+Cloud Run Job
+    ↓
+Extract
+    ↓
+Transform
+    ↓
+Load
+    ↓
+Google Sheets
 
 ## Estructura
 
-```text
 RN_RVACD/
-├── configs/
+│
 ├── data/
-├── docker/
-├── logs/
+│   ├── external/
+│   └── raw/
+│
 ├── scripts/
-│   ├── loading/
-│   ├── scraping/
-│   └── transformation/
-└── tests/
+│   ├── extract/
+│   ├── transformation/
+│   └── loading/
+│
+├── main.py
+├── Dockerfile
+├── requirements.txt
+└── README.md
+
+## Ejecución local
+
+```bash
+python main.py

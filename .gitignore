@@ -1,51 +1,32 @@
-# =========================
 # Python
-# =========================
 __pycache__/
 *.py[cod]
-*.pyo
-.venv/
+*$py.class
+
+# Virtual environments
 venv/
+.venv/
 env/
 
-# =========================
-# Environment / credentials
-# =========================
+# IDE
+.vscode/
+.idea/
+
+# Environment variables
 .env
 .env.*
-!.env.example
 
-*.key
-*.pem
-credentials.json
-service-account.json
+# Credentials
+clave/
+*.json
 
-# =========================
-# Datos
-# =========================
-*.csv
-*.xlsx
-*.xls
-*.parquet
+# Temporary data
+data/raw/*
+data/external/*
 
-# =========================
 # Logs
-# =========================
-logs/
 *.log
 
-# =========================
-# Jupyter
-# =========================
-.ipynb_checkpoints/
-
-# =========================
-# VS Code
-# =========================
-.vscode/
-
-# =========================
-# Sistema operativo
-# =========================
+# OS
 .DS_Store
 Thumbs.db

@@ -3,8 +3,12 @@ from pathlib import Path
 from datetime import date
 
 URL = ("http://oiteopendata.diresacallao.gob.pe/""Opendata.beta/Req/Report/Consultas/""Por_hasta_10Codigos.php")
-CARPETA = Path("data/raw")
-CARPETA.mkdir(exist_ok=True)
+BASE_DIR = Path(__file__).resolve().parents[2]
+CARPETA = BASE_DIR / "data" / "raw"
+CARPETA.mkdir(
+    parents=True,
+    exist_ok=True
+)
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "

@@ -1,6 +1,6 @@
 import pandas as pd
 from datetime import datetime, timedelta
-from Agregar_Fechas_nac import proceso_fechanac
+from transformation.Agregar_Fechas_nac import proceso_fechanac
 
 def data_procesada():
  def cargar_datos():
