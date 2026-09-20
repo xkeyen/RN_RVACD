@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from extract.DNIS import miprincipal
+from scripts.extract.DNIS import miprincipal
 
 def data_99381_01():
  def procesar_documento_vectorizado(df_grupo, fecha_nacimiento):

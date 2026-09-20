@@ -1,6 +1,6 @@
 import pandas as pd
 from datetime import datetime
-from extract.DNIS import miprincipal
+from scripts.extract.DNIS import miprincipal
 
 def proceso_fechanac():
  usecols = ['FECHA ATENCION', 'NUMERO DOCUMENTO','CODIGO CIE','VALOR LAB']
